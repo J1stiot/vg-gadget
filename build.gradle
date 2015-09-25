@@ -1,0 +1,47 @@
+subprojects{
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.8 //设置JDK版本
+    version = '1.0'
+
+    // Encoding
+    tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+
+    repositories {
+        //mavenCentral()
+        maven { url "http://maven.oschina.net/content/groups/public/" }
+        maven { url 'http://mirrors.ibiblio.org/maven2/' } // ibiblio mirror
+        maven { url "https://repo.eclipse.org/content/repositories/paho-releases/"}
+    }
+
+    dependencies {
+        // Junit
+        testCompile 'junit:junit:4.8.2'
+
+        // Apache Commons
+        compile 'org.apache.commons:commons-lang3:3.3.2'
+
+        // Jackson
+        compile 'com.fasterxml.jackson.core:jackson-core:2.4.3'
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.4.3'
+
+        // Logging
+        compile 'org.slf4j:slf4j-api:1.7.7'
+        compile 'ch.qos.logback:logback-core:1.1.2'
+        compile 'ch.qos.logback:logback-classic:1.1.2'
+
+        // Http Client
+        compile('org.apache.httpcomponents:httpclient:4.4.1')
+
+        // Commons Configuration
+        compile 'commons-configuration:commons-configuration:1.10'
+
+        // uuid
+        compile 'com.fasterxml.uuid:java-uuid-generator:3.1.4'
+
+        //rabbitmq amqp
+        compile 'com.rabbitmq:amqp-client:3.5.5'
+
+    }
+}
+

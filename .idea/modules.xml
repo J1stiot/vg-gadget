@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/argus-vds.iml" filepath="$PROJECT_DIR$/argus-vds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/just-io/just-io.iml" filepath="$PROJECT_DIR$/just-io/just-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartWeather/smartWeather.iml" filepath="$PROJECT_DIR$/smartWeather/smartWeather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vg-sms/vg-sms.iml" filepath="$PROJECT_DIR$/vg-sms/vg-sms.iml" />
+    </modules>
+  </component>
+</project>

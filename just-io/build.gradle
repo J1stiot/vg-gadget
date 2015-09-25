@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+dependencies {
+    // Quartz
+    compile "org.quartz-scheduler:quartz:2.2.1"
+    compile "org.quartz-scheduler:quartz-jobs:2.2.1"
+
+    //rabbitmq amqp
+    compile 'com.rabbitmq:amqp-client:3.5.5'
+}
