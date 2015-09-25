@@ -1,0 +1,8 @@
+rootProject.name = 'argus-vds'
+
+include 'smartWeather'
+
+include 'vg-sms'
+
+include 'just-io'
+
